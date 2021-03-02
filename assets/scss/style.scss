@@ -1,11 +1,11 @@
 @import "../../libs/normalize-scss/sass/normalize/import-now";
 
-//@import "skin";
-//@import "variables";
-//@import "mixins";
-//@import "mixins-media";
-//@import "extends";
-//
+@import "skin";
+@import "variables";
+@import "mixins";
+@import "mixins-media";
+@import "extends";
+
 @import "common";
 @import "header/header";
 @import "header/header-overlay";
@@ -14,21 +14,10 @@
 @import "header/header-navbar";
 @import "header/header-content";
 
-@import "sections/section-skills";
+@import "sections/section-skills/skills";
+@import "sections/section-skills/skill-item";
 @import "sections/section-about";
 @import "sections/section-form";
 @import "sections/section-posts";
 
 @import "footer";
-
-/* вопросы к следующему занятию: */
-/* что в css становится неудобным для быстрой, комфортной эффективной работы */
-/*2. постоянно использую одни и теже цвета, но вынужден брать их из макета.*/
-/*   нет возможности повторно использовать цвет.*/
-//3. нет возможности использовать размеры
-
-@media (max-height: 690px) {
-  .skill-item {
-    grid-auto-rows: calc(230px - 13.333px);
-  }
-}
