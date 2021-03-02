@@ -3,41 +3,43 @@
 }
 
 html {
-  font-size: $font-size;
-  font-family: $font-main;
   overflow-y: scroll;
+
+  font-family: $font-main;
+  font-size: $font-size;
 }
 
 h1 {
-  font-family: $font-header;
-  font-weight: 300;
   text-align: center;
   letter-spacing: 0.08em;
+
+  font-family: $font-header;
+  font-weight: 300;
   line-height: 1.2em;
 
   @include lg-min {
     font-size: 3.75rem;
   }
-
   @include lg-md {
     font-size: 2.5rem;
   }
-
   @include md {
     font-size: 1.875rem;
   }
 }
 
 a {
-  color: $color-light;
   text-decoration: none;
+
+  color: $color-light;
 }
 
 .btn {
   display: block;
+
+  transition: background-color 0.5s;
   text-align: center;
   letter-spacing: 0.1em;
-  transition: background-color 0.5s;
 }
 
 .btn--light {
@@ -45,30 +47,33 @@ a {
   background-color: rgba($color-light, 0.1);
 
   @include lg-min {
+    min-width: 250px;
     height: 60px;
     padding: 18px $gap;
-    min-width: 250px;
+
     font-size: 1.125rem;
   }
   @include lg-md {
+    min-width: 200px;
     height: 50px;
     padding: 14px $gap;
-    min-width: 200px;
   }
   @include md {
+    min-width: 170px;
     height: 40px;
     padding: 9px $gap;
-    min-width: 170px;
   }
 }
 
 
 .btn--primary {
-  font-size: 1.125rem;
   height: 60px;
   padding: 18px $gap;
+
   border: 2px solid $color-primary;
   background-color: rgba($color-primary, 0.8);
+
+  font-size: 1.125rem;
 
   @include sm-min {
     min-width: 350px;

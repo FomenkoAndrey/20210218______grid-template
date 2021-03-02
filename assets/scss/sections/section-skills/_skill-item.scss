@@ -1,7 +1,9 @@
 .skill-item {
-  background-color: $color-primary;
   position: relative;
+
   overflow: hidden;
+
+  background-color: $color-primary;
 
   &:hover {
     .skill-item__overlay {
@@ -18,27 +20,33 @@
   }
 
   &__overlay {
-    background-color: $color-primary;
-    opacity: 0.8;
     z-index: 1;
+
     transition: opacity 0.5s;
+
+    opacity: 0.8;
+    background-color: $color-primary;
 
     @include abs-position;
   }
 
   &__image {
     height: 100%;
+
+    transition: transform 0.5s;
+
+    background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
-    transition: transform 0.5s;
 
     @include abs-position;
   }
 
   &__title {
     z-index: 2;
+
     margin: 0;
+
     letter-spacing: 0.1em;
 
     @include abs-position;
@@ -51,10 +59,12 @@
   }
 
   &__link {
-    padding: $gap;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+    padding: $gap;
+
     transition: color 0.5s;
 
     @include abs-position;
